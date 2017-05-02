@@ -1,0 +1,6 @@
+<h3>Group</h3>
+<ul>
+    <li *ngFor="let person of persons" (click)="viewPerson(person)">
+        <span>{{ person.id_person }} {{ person.name }} {{ person.surname }}</span>
+    </li>
+</ul>

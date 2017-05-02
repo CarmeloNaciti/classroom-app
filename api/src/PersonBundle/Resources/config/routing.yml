@@ -1,0 +1,4 @@
+person:
+    type:     rest
+    resource: 'PersonBundle:Default'
+    methods: [GET, PUT]

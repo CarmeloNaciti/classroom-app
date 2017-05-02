@@ -1,0 +1,19 @@
+<h3>Person Details</h3>
+<ul>
+    <li *ngIf="person">
+        <span>{{ person.id_person }}</span>
+        <span>{{ person.name }} {{ person.surname }}</span>
+    </li>
+</ul>
+
+<div *ngIf="person">
+    <div>
+        <label for="person-name">Name:</label>
+        <input id="person-name" [(ngModel)]="person.name" />
+    </div>
+    <div>
+        <label for="person-surname">Surname:</label>
+        <input id="person-surname" [(ngModel)]="person.surname" />
+    </div>
+    <button (click)="updatePerson()">Update</button>
+</div>
